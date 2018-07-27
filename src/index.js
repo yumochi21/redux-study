@@ -1,6 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App';
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import Root from './components/Root'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(function() { return {} })
+
+render(
+  <Root store={store} />,
+  document.getElementById('root')
+)
+
+console.log(store.getState())
