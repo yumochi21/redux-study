@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.List {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: calc(100% - 20px);
+  min-height: 100%;
+  margin-left: 10px;
+}
+.List-link {
+  display: block;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #216583;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.List-link:hover {
+  background-color: #1976d2;
+  color: #ffffff;
+}

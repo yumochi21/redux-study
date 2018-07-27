@@ -1,5 +1,11 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: meiryo, 'ヒラギノ角ゴシック', sans-serif;
+  font-size: 14px;
+}
+
+* {
+  outline: none;
+  -webkit-appearance: none;
 }

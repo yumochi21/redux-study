@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.Menu {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 200px;
+  height: 100%;
+}
+.Menu-element {
+  display: block;
+  width: calc(100% - 44px);
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #216583;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.Menu-element:hover {
+  background-color: #fbfbfb;
+}
+.Menu-element img {
+  width: 16px;
+  margin-top: -3px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

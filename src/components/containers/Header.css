@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.Header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 20px);
+  min-width: 1000px;
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(150, 150, 150, 0.2);
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.Header-Logo {
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'cursive';
+  font-weight: 700;
+  color: #f76262;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Header-Logo img {
+  width: 30px;
+  margin-top: -3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.Header-link-count {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  /* padding: 5px; */
+  color: #888888;
+  text-align: right;
+}
+.Header-link-count-num {
+  padding: 2px 6px;
+  margin-right: 6px;
+  margin-left: 8px;
+  font-weight: 700;
+  /* color: #65c0ba; */
+  color: #ffffff;
+  background-color: #65c0ba;
+  border: 1px solid #65c0ba;
+  border-radius: 3px;
+}
+.Header-controls {
+  display: inline-block;
+  margin-left: 40px;
+}
+.Header-controls-btn {
+  display: inline-block;
+  width: 100px;
+  padding: 3px 8px;
+  margin-right: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #888888;
+  border: 1px solid #bbbbbb;
+  font-size: 12px;
+  text-align: center;
+  transition: 0.2s;
+}
+.Header-controls-btn:hover {
+  background-color: #65c0ba;
+  color: #ffffff;
+  border: 1px solid #65c0ba;
+}
