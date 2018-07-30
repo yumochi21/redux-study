@@ -1,12 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore } from 'redux'
-// import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
+import logger from 'redux-logger'
 import Root from './components/Root'
 import reducer from './reducers'
 import './index.css'
 
-const store = createStore(reducer)
+const store = createStore(reducer, applyMiddleware(thunk, logger))
 
 // const history = syncHistoryWithStore(browserHistory, store)
 

@@ -20,7 +20,7 @@ class Menu extends Component {
         {
           (menus != null) ?
             menus.map(m => {
-              return <MenuElement name={m.label} code={m.code} key={'Menu-element-' + m.code} handleClick={() => actions.getList(m.code)} />
+              return <MenuElement name={m.label} code={m.code} key={'Menu-element-' + m.code} handleClick={() => actions.getLinkList(m.code)} />
             }) : null
         }
       </div>

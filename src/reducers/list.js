@@ -27,10 +27,27 @@ const initialAppState = {
 const list = (state = initialAppState, action) => {
   switch (action.type) {
     case actionTypes.GET_LIST:
-      console.log(action.code)
       return {
         ...state,
         links: getList(action.code)
+      }
+    case actionTypes.GET_LIST_REQUEST:
+      console.log('request')
+      return {
+        ...state,
+        links: []
+      }
+    case actionTypes.GET_LIST_SUCCESS:
+      console.log('success')
+      return {
+        ...state,
+        links: action.links
+      }
+    case actionTypes.GET_LIST_FAILURE:
+      console.log('error')
+      return {
+        ...state,
+        links: []
       }
     case actionTypes.SET_CODE:
       return {

@@ -23,7 +23,7 @@ const TEST_CATEGORY = [
  */
 class ListContainer extends Component {
   componentDidMount() {
-    this.props.actions.getList(this.props.match.params.code)
+    this.props.actions.getLinkList(this.props.match.params.code)
   }
   render() {
     const {links, match} = this.props
