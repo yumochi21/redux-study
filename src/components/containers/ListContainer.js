@@ -26,6 +26,7 @@ class ListContainer extends Component {
     this.props.actions.getLinkList(this.props.match.params.code)
   }
   render() {
+    console.log(this.props)
     const {links, match} = this.props
     return (
       <div className="App">

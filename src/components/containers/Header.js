@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { IMG_PATH } from '../../constants/path'
 import './Header.css'
 
@@ -23,7 +24,9 @@ const Header = () => (
  * @param {String} path 機能パス
  */
 const HeaderControlsBtn = ({name, path}) => (
-  <a className="Header-controls-btn" href={path}>{name}</a>
+  <Link to={path} className="Header-controls-btn">
+    {name}
+  </Link>
 )
 
 export default Header
