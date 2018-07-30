@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
-.List {
+.List-box {
   display: flex;
   flex-wrap: wrap;
   align-content: stretch;
   width: calc(100% - 20px);
   min-height: 100%;
-  margin-left: 10px;
+}
+.List-title {
+  margin-bottom: 10px;
+  border-left: 5px solid #f76262;
+  padding-left: 10px;
+  color: #f76262;
+  font-weight: 700;
 }
 .List-link {
   display: block;

@@ -2,12 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import App from './App'
+import ListContainer from './containers/ListContainer'
+import './App.css'
 
-const Root = ({ store }) => (
+const Root = ({store}) => (
   <Provider store={store}>
     <Router>
-      <Route path="/:filter?" component={App} />
+      <Route path="/list/:code" component={ListContainer} store={store} />
     </Router>
   </Provider>
 )

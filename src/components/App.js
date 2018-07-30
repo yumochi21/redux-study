@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Header from './containers/Header'
 import Menu from './containers/Menu'
 import Content from './containers/Content'
@@ -16,16 +16,6 @@ const TEST_CATEGORY = [
   {code: '008', label: 'テスト'}
 ]
 
-const TEST_LINK = [
-  {code: '001', label: 'テストリンク', url: 'https://google.com'},
-  {code: '002', label: 'テストリンク', url: 'https://google.com'},
-  {code: '003', label: 'テストリンク', url: 'https://google.com'},
-  {code: '004', label: 'テストリンク', url: 'https://google.com'},
-  {code: '005', label: 'テストリンク', url: 'https://google.com'},
-  {code: '006', label: 'テストリンク', url: 'https://google.com'},
-  {code: '007', label: 'テストリンク', url: 'https://google.com'}
-]
-
 class App extends Component {
   render() {
     return (
@@ -33,7 +23,7 @@ class App extends Component {
         <Header />
         <Menu menus={TEST_CATEGORY} />
         <Content>
-          <List links={TEST_LINK} />
+          <List />
         </Content>
       </div>
     );
