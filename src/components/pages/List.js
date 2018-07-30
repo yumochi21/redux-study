@@ -1,4 +1,5 @@
 import React from 'react'
+import { IMG_PATH } from '../../constants/path'
 import './List.css'
 
 /**
@@ -13,6 +14,7 @@ const List = ({links}) => (
           return <ListElement label={l.label} url={l.url} key={'Link-element-' + l.code} />
         }) : null
     }
+    <ListAddButton />
   </div>
 )
 
@@ -24,6 +26,15 @@ const List = ({links}) => (
 const ListElement = ({label, url}) => (
   <a className="List-link" href={url} target="_blank">
     {label}
+  </a>
+)
+
+/**
+ * リンク追加ボタン
+ */
+const ListAddButton = () => (
+  <a className="List-add-button" href="#">
+    <img src={IMG_PATH + 'folder-add.png'} alt="リンク追加" />
   </a>
 )
 

@@ -11,18 +11,37 @@
 .List-link {
   display: block;
   padding: 10px;
-  width: 250px;
+  width: calc(50% - 30px);
   margin-bottom: 10px;
   margin-right: 10px;
-  border-radius: 4px;
-  color: #ffffff;
-  background-color: #216583;
-  font-weight: 700;
+  color: #444444;
+  background-color: #e0f7fa;
+  font-weight: 100;
   font-size: 12px;
   text-decoration: none;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
   transition: 0.2s;
 }
 .List-link:hover {
-  background-color: #1976d2;
-  color: #ffffff;
+  background-color: #b2ebf2 ;
+}
+
+.List-add-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  background-color: #216583;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  vertical-align: middle;
+  text-align: center;
+  transition: 0.4s;
+}
+.List-add-button:hover {
+  background-color: #65c0ba;
+}
+.List-add-button img {
+  display: block;
+  width: 30px;
 }

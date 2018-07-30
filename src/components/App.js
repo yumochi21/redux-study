@@ -17,7 +17,7 @@ const TEST_CATEGORY = [
 ]
 
 const TEST_LINK = [
-  {code: '001', label: 'テストリンクテストリンクテストリンクテストリンクテストリンクテストリンクテストリンクテストリンクテストリンクテストリンクテストリンクテストリンク', url: 'https://google.com'},
+  {code: '001', label: 'テストリンク', url: 'https://google.com'},
   {code: '002', label: 'テストリンク', url: 'https://google.com'},
   {code: '003', label: 'テストリンク', url: 'https://google.com'},
   {code: '004', label: 'テストリンク', url: 'https://google.com'},
